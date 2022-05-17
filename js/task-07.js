@@ -3,8 +3,4 @@ const refs = {
     text: document.querySelector('#text'),
 }
 
-refs.fontSizeControlInput.addEventListener('input', (event) => {
-    refs.text.style.fontSize = `${event.currentTarget.value}px`;
-
-    console.log(event.currentTarget.value);
-})
+refs.fontSizeControlInput.addEventListener('input', (event) => refs.text.style.fontSize = `${event.currentTarget.value}px`)
